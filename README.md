@@ -2,7 +2,7 @@
 
 Entering hardcore-mode will disable arrow keys, backspace and return.
 
-* Use C-f/b/n/p instead of right/left/up/down
+* Use C-f/b/p/n instead of right/left/up/down
 * Use C-h instead of backspace
 * Use C-m or C-j instead of return
 
