@@ -44,6 +44,10 @@
 
 ;; Code:
 
+(defgroup hardcore-mode nil
+  "Disable arrow keys + optionally backspace and return."
+  :group 'keyboard)
+
 (defcustom too-hardcore-backspace nil
   "On non-nil value, don't disable backspace in hardcore mode.")
 
