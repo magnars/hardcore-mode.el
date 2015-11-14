@@ -44,6 +44,10 @@
 
 ;; Code:
 
+(defgroup hardcore-mode nil
+  "Disable arrow keys + optionally backspace and return."
+  :group 'keyboard)
+
 (defcustom too-hardcore-backspace nil
   "On non-nil value, don't disable backspace in hardcore mode.")
 
@@ -83,12 +87,14 @@
                          (interactive)
                          (message "Return is disabled. Use C-m or C-j instead.")))))
 
+;;;###autoload
 (define-minor-mode hardcore-mode
   "Hardcore emacs minor mode."
   nil " hc" hardcore-mode-map)
 
+;;;###autoload
 (define-globalized-minor-mode global-hardcore-mode
   hardcore-mode hardcore-mode)
 
 (provide 'hardcore-mode)
-;; hardcore-mode.el ends here
+;;; hardcore-mode.el ends here
