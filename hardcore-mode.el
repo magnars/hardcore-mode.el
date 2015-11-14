@@ -91,4 +91,4 @@
   hardcore-mode hardcore-mode)
 
 (provide 'hardcore-mode)
-;; hardcore-mode.el ends here
+;;; hardcore-mode.el ends here
