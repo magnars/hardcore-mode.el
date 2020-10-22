@@ -22,6 +22,11 @@ you require the mode:
 
 These are the settings I am using at the time. Still not hardcore enough. ^^
 
+If you still want to use the arrow keys in the minibuffer (to choose a buffer name, previous command, etc.), add these lines:
+
+    (add-hook 'minibuffer-setup-hook (lambda () (hardcore-mode 0)))
+    (add-hook 'minibuffer-exit-hook (lambda () (hardcore-mode 1)))
+
 ## License
 
 Copyright (C) 2011 Magnar Sveen
